@@ -115,7 +115,7 @@ header h1 {
 }
 
 /* Making last p element in .about-us flush with the bottom of the img*/
-/* Added space between .fake-button anchors and .about-us and respective img */
+/* Added space between .fake-button and .about-us and respective img */
     .about-us p:last-child {
         padding-bottom: 0;
     }
@@ -130,7 +130,7 @@ footer {
     align-items: center;
     flex-direction: column;
     margin-top: 50px;
-    height: 60px;
+    padding: 25px;
     font-weight: 200;
 }
 
