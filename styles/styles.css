@@ -134,8 +134,6 @@ footer {
     font-weight: 200;
 }
 
-
-
 /************* index page *************/
 
 /* TO-DO: 
@@ -185,7 +183,47 @@ footer {
 
 */
 
+.booking-page {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.booking-page p,
+.booking-page li {
+    font-size: 18px;
+}
+
+.day-selector {
+    display: flex;
+    margin-bottom: 12px;
+    gap: 20px;
+}
+
+.booking-page li {
+    width: 60px;
+}
+
+.booking-page li, .small-button {
+    border: 1px solid black;
+}
+
+.booking-page .small-button {
+    padding: 5px;
+}
+
+.top-margin {
+    margin: 24px 0 12px 0;
+}
+
+#clear-button {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.clicked {
+    background-color: #E5AF42;
+}
 
 
 
