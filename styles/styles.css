@@ -24,8 +24,9 @@ body {
 
 /* TO DO: all elements with the .flex class applied are to be made into flex-box containers. */
 
-
- 
+.flex {
+    display: flex;
+}
 
 /************* site-wide text styling *************/
 
@@ -42,12 +43,45 @@ body {
         - change the cursor to pointer.
 */
 
+h1 {
+    font-size: 48px;
+    justify-content: center;
+    align-items: center;
+}
 
+h2 {
+    font-size: 36px;
+    padding-bottom: 12px;
+}
 
+.large-text {
+    font-size: 24px;
+}
 
+.fake-button {
+    background-color: #E5AF42;
+    justify-content: center;
+    line-height: 3;
+    border: 1px solid black;
+}
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
 
+.fake-button:hover,
+.blue-hover:hover {
+    text-decoration: underline;
+    background-color: #4278e5;
+    color: white;
+    cursor: pointer;
+}
 
 /************* header/footer styling *************/
 
@@ -59,8 +93,46 @@ body {
     - the footer will be 60px tall, have a font-weight of 200, and the text within will be centered vertically and horizontally.
 */
 
+header, footer {
+    background-color: #E5AF42;
+}
 
+header {
+    height: 150px;
+    margin-bottom: 25px;
+}
 
+header img {
+    width: 100px;
+    padding: 25px 0 25px 25px;
+    /* center top lvl heading??? */
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Making last p element in .about-us flush with the bottom of the img*/
+/* Added space between .fake-button anchors and .about-us and respective img */
+    .about-us p:last-child {
+        padding-bottom: 0;
+    }
+
+    .flex {     
+        margin-bottom: 50px;
+    }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 60px;
+    font-weight: 200;
+}
 
 
 
@@ -74,10 +146,30 @@ body {
     - the pair of fake-buttons will be centered on the page. HINT: can calculate the required margin to make them appear to be centered.
 */
 
+.index img {
+    display: flex;
+    width: 300px;
+    margin-left: 25px;
+}
 
+.about-us h2 {
+    line-height: 36px;
+}
 
+.about-us p {
+    padding-bottom: 12px;
+}
 
+.flex {
+    display: flex;
+    justify-content: center;
+}
 
+.flex .fake-button {
+    display: flex;
+    width: 250px;
+    margin: 0 75px; 
+}
 
 /************* bookings page *************/
 
