@@ -53,9 +53,9 @@ var halfDay = document.getElementById('half');
 halfDay.addEventListener('click', function() {
   halfDay.classList.add('clicked');
   fullDay.classList.remove('clicked');
-  var dailyRate = costPerHalfDay
-  cost.innerHTML = numberDaysSelected * dailyRate
-})
+  var dailyRate = costPerHalfDay;
+  cost.innerHTML = numberDaysSelected * dailyRate;
+});
 
 
 // when the full-day button is clicked, the daily rate is set back to $35, the clicked class is 
@@ -66,9 +66,9 @@ var fullDay = document.getElementById('full');
 fullDay.addEventListener('click', function() {
   fullDay.classList.add('clicked');
   halfDay.classList.remove('clicked');
-  dailyRate = costPerDay;
+  var dailyRate = costPerDay;
   cost.innerHTML = numberDaysSelected * dailyRate;
-})
+});
 
 /********* calculate *********/
 // when a calculation is needed, set the innerHTML of the calculated-cost element to the 

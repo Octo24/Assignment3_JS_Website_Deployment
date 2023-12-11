@@ -248,7 +248,7 @@ footer {
 
 label {
     width: 150px;
-    align-content: right;
+    text-align: right;
 }
 
 input {
