@@ -51,6 +51,8 @@ clearButton.addEventListener('click', function() {
 var halfDay = document.getElementById('half');
 
 halfDay.addEventListener('click', function() {
+  halfDay.classList.add('clicked');
+  fullDay.classList.remove('clicked');
   var dailyRate = costPerHalfDay
   cost.innerHTML = numberDaysSelected * dailyRate
 })
@@ -62,6 +64,8 @@ halfDay.addEventListener('click', function() {
 var fullDay = document.getElementById('full');
 
 fullDay.addEventListener('click', function() {
+  fullDay.classList.add('clicked');
+  halfDay.classList.remove('clicked');
   dailyRate = costPerDay;
   cost.innerHTML = numberDaysSelected * dailyRate;
 })
